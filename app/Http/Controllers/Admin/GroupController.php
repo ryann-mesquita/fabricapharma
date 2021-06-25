@@ -16,6 +16,7 @@ class GroupController extends Controller
     }
 
     public function index(){
+        $teste= 'commit';
         $groups = $this->repository->latest()->paginate(1);
 
         return view('admin.pages.groups.index',[
